@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
-    <title>Home</title>
-  </head>
-  <body>
-    <h1>Sam</h1>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Too Good to Waste</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <input type="text" placeholder="Search Walmart" class="search-bar">
+            <span class="settings">⚙️</span>
+        </div>
+    </header>
+    
+    <main>
+        <section class="banner">
+            <h1>Too Good to Waste</h1>
+            <p>Discover amazing deals on surplus goods, great for your wallet and the planet.</p>
+        </section>
+        
+        <section class="filters">
+            <button class="filter">Fruits</button>
+            <button class="filter">Meat</button>
+            <button class="filter">Vegetables</button>
+        </section>
+        
+        <section class="product-list">
+            <div class="product" onclick="showProductDetails('banana')">
+                <img src="banana.jpg" alt="Banana">
+                <h2>Banana</h2>
+                <p>Now $0.30</p>
+                <button class="add-btn">+ Add</button>
+            </div>
+            
+            <div class="product" onclick="showProductDetails('broccoli')">
+                <img src="broccoli.jpg" alt="Broccoli">
+                <h2>Broccoli</h2>
+                <p>Now $2.27</p>
+                <button class="add-btn">+ Add</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <nav>
+            <button>🏬 Shop</button>
+            <button>📦 My Items</button>
+            <button>🔍 Search</button>
+            <button>💰 Savings</button>
+            <button>👤 Account</button>
+        </nav>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
 </html>
+ 
