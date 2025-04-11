@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Banana Product Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <input type="text" class="search-bar" placeholder="Search Walmart" />
+    <div class="cart">🛒</div>
+  </header>
+
+  <main class="product-page">
+    <h1>Banana</h1>
+    <p class="price">30¢ <span class="sub">avg price</span></p>
+    <p class="sub">13¢/100g — Final cost by weight</p>
+    
+    <div class="banana-image">
+      <img src="banana.jpg" alt="Banana"/>
+    </div>
+
+    <div class="price-tag">
+      <p class="discounted">Now $0.26</p>
+      <button class="add-btn">Add to cart</button>
+    </div>
+
+    <div class="options">
+      <label><input type="radio" checked /> One-time purchase ($0.26)</label>
+    </div>
+
+    <div class="delivery-options">
+      <p><strong>How do you want your item?</strong></p>
+      <button>Shipping</button>
+      <button>Pickup</button>
+      <button>Delivery</button>
+    </div>
+
+    <section class="dropdown-section">
+        <button class="dropdown-toggle">
+          At a glance
+          <span class="arrow">▼</span>
+        </button>
+        <div class="dropdown-content">
+          <div class="tags">
+            <div>Food condition: <strong>Fresh</strong></div>
+            <div>Fruit type: <strong>Banana</strong></div>
+            <div>Count: <strong>1</strong></div>
+            <div>Brand: <strong>Fresh Produce</strong></div>
+            <div>Allergen-free: <strong>Gluten-Free, Dairy-Free, Tree Nut-Free</strong></div>
+            <div>Accreditation: <strong>USDA Inspection</strong></div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="recipes">
+        <div class="section-header">
+          <h3>Suggested Recipes</h3>
+          <button class="refresh-btn">⟳</button>
+        </div>
+        <div class="recipe-list">
+          <div class="recipe-card">
+            <img src="turon.jpg" alt="Filipino Turon" />
+            <p class="recipe-title">Filipino Turon</p>
+            <button class="like-btn">♡</button>
+          </div>
+          <div class="recipe-card">
+            <img src="fritters.jpg" alt="Banana Fritters" />
+            <p class="recipe-title">Banana Fritters</p>
+            <button class="like-btn">♡</button>
+          </div>
+          <div class="recipe-card">
+            <img src="kele.jpg" alt="Kele ki Sabzi" />
+            <p class="recipe-title">Kele ki Sabzi</p>
+            <button class="like-btn">♡</button>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Static dropdown headers -->
+      <section class="static-dropdowns">
+        <div class="dropdown-toggle">Nutritional information <span class="arrow">▼</span></div>
+        <div class="dropdown-toggle">Product details <span class="arrow">▼</span></div>
+        <div class="dropdown-toggle">Warning <span class="arrow">▼</span></div>
+      </section>
+      
+  </main>
+  <script src="script.js"></script>
+
+</body>
+</html>

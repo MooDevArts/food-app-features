@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Broccoli Product Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <input type="text" class="search-bar" placeholder="Search Walmart" />
+    <div class="cart">🛒</div>
+  </header>
+
+  <main class="product-page">
+    <h1>Broccoli Stalks, Sold in singles</h1>
+    <p class="price">$2.97 <span class="sub">avg price</span></p>
+    <p class="sub">15¢/100g — Final cost by weight</p>
+    
+    <div class="banana-image">
+      <img src="broccoli.jpg" alt="Broccoli"/>
+    </div>
+
+    <div class="price-tag">
+      <p class="discounted">Now $2.97 <span class="sub">Before $3.60</span></p>
+      <button class="add-btn">Add to cart</button>
+    </div>
+
+    <div class="options">
+      <label><input type="radio" checked /> One-time purchase ($2.97)</label>
+    </div>
+
+    <div class="delivery-options">
+      <p><strong>How do you want your item?</strong></p>
+      <button>Shipping</button>
+      <button>Pickup</button>
+      <button>Delivery</button>
+    </div>
+
+    <!-- At a glance dropdown -->
+    <section class="dropdown-section">
+      <button class="dropdown-toggle">
+        At a glance
+        <span class="arrow">▼</span>
+      </button>
+      <div class="dropdown-content">
+        <div class="tags">
+          <div>Food condition: <strong>Fresh</strong></div>
+          <div>Container type: <strong>Bag</strong></div>
+          <div>Count: <strong>1</strong></div>
+          <div>Brand: <strong>Fresh Produce</strong></div>
+          <div>Food preparation: <strong>Chopped</strong></div>
+          <div>Accreditation: <strong>USDA Inspection</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Suggested Recipes -->
+    <section class="recipes">
+      <div class="section-header">
+        <h3>Suggested Recipes</h3>
+        <button class="refresh-btn">⟳</button>
+      </div>
+      <div class="recipe-list">
+        <div class="recipe-card">
+          <img src="broccoli-soup.jpg" alt="Broccoli Soup" />
+          <p class="recipe-title">Broccoli Soup</p>
+          <button class="like-btn">♡</button>
+        </div>
+        <div class="recipe-card">
+          <img src="beef-broccoli.jpg" alt="Beef Broccoli" />
+          <p class="recipe-title">Beef Broccoli</p>
+          <button class="like-btn">♡</button>
+        </div>
+        <div class="recipe-card">
+          <img src="broccoli-pasta.jpg" alt="Broccoli Pasta" />
+          <p class="recipe-title">Broccoli Pasta</p>
+          <button class="like-btn">♡</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Static dropdown headers -->
+    <section class="static-dropdowns">
+      <div class="dropdown-toggle">Nutritional information <span class="arrow">▼</span></div>
+      <div class="dropdown-toggle">Product details <span class="arrow">▼</span></div>
+      <div class="dropdown-toggle">Warning <span class="arrow">▼</span></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

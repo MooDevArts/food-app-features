@@ -1,5 +1,4 @@
-/* styles.css */
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 12px;
 }
 
 .search-bar {
@@ -23,28 +22,22 @@ body {
     border: none;
 }
 
-.banner {
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 .filters {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
     margin: 15px 0;
 }
 
 .filter {
     background-color: #0078d4;
     color: white;
-    padding: 10px 15px;
+    padding: 12px 18px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    font-size: 16px;
 }
 
 .filter:hover {
@@ -53,6 +46,7 @@ body {
 
 .product-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 20px;
@@ -66,7 +60,7 @@ body {
     text-align: center;
     cursor: pointer;
     transition: 0.3s;
-    width: 150px;
+    width: 180px;
 }
 
 .product:hover {
@@ -74,20 +68,100 @@ body {
 }
 
 .product img {
-    width: 100px;
+    width: 120px;
     height: auto;
     margin-bottom: 10px;
 }
 
-.add-btn {
-    background-color: #0078d4;
-    color: white;
-    border: none;
-    padding: 10px;
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
     border-radius: 5px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+}
+
+.close-btn {
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
 }
 
+/* Product Details */
+.product-details {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Quantity Input */
+.quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    gap: 10px;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Buttons */
+.add-btn {
+    width: 100%;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #005bb5;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+/* Footer */
 footer {
     position: fixed;
     bottom: 0;
@@ -101,3 +175,271 @@ nav {
     display: flex;
     justify-content: space-around;
 }
+/* === Banana Product Detail Page === */
+
+.top-bar {
+    background: #0063e5;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .search-bar {
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .cart {
+    font-size: 1.5rem;
+  }
+  
+  .product-page {
+    padding: 1rem;
+  }
+  
+  .product-page h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .product-page .price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0.3rem 0;
+  }
+  
+  .product-page .sub {
+    color: gray;
+    font-size: 0.9rem;
+  }
+  
+  .banana-image img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 12px;
+  }
+  
+  .price-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  
+  .discounted {
+    color: green;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .add-btn {
+    background: #0071e3;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+  }
+  
+  .options,
+  .delivery-options {
+    margin: 1rem 0;
+  }
+  
+  .options label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .delivery-options p {
+    font-weight: bold;
+  }
+  
+  .delivery-options button {
+    margin: 0.3rem 0.4rem 0.3rem 0;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+  }
+  
+  .glance {
+    margin-top: 1rem;
+  }
+  
+  .glance h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .tags {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem;
+  }
+  
+  .tags div {
+    background: #f0f0f0;
+    padding: 0.6rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .recipes {
+    margin-top: 1rem;
+  }
+  
+  .recipes h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .recipe-list {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+  
+  .recipe-card {
+    background: #fff7e0;
+    border-radius: 8px;
+    padding: 0.75rem;
+    min-width: 150px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+/* Dropdown Accordion Section */
+.dropdown-section {
+    margin-top: 1rem;
+  }
+  
+  .dropdown-toggle {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    background: #f5f5f5;
+    border: none;
+    text-align: left;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dropdown-toggle .arrow {
+    font-size: 1rem;
+  }
+  
+  .dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 1rem;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .dropdown-content.active {
+    max-height: 1000px; /* large enough to hold your content */
+    padding: 1rem;
+    margin-top: 0.5rem;
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  
+  .tags {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+  
+  .tags div {
+    background: #f0f0f0;
+    padding: 0.6rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .refresh-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .recipe-list {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+  
+  .recipe-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    min-width: 140px;
+    text-align: center;
+    padding: 0.5rem;
+    position: relative;
+  }
+  
+  .recipe-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .recipe-title {
+    font-size: 0.9rem;
+    margin: 0.5rem 0 0;
+  }
+  
+  .like-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #888;
+    cursor: pointer;
+    margin-top: 0.3rem;
+  }
+  
+  /* Static dropdowns (no JS yet) */
+  .static-dropdowns {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .static-dropdowns .dropdown-toggle {
+    padding: 1rem;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
